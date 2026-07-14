@@ -160,10 +160,10 @@ Peer dependency:
 npm pack --dry-run
 
 # extension loads
-pi -e /Users/mikhail/pi-quran-verses --list-models
+pi -e . --list-models
 
 # interactive check
-pi -e /Users/mikhail/pi-quran-verses
+pi -e .
 # then send a prompt and confirm spinner verse text
 # run /quran-lang and switch language
 ```

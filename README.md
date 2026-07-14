@@ -23,13 +23,15 @@ pi install git:github.com/mwijanarko1/pi-quran-verses
 ### Local path
 
 ```bash
-pi install /Users/mikhail/pi-quran-verses
+pi install /absolute/path/to/pi-quran-verses
+# or
+pi install ./pi-quran-verses
 ```
 
 Temporary test without installing:
 
 ```bash
-pi -e /Users/mikhail/pi-quran-verses
+pi -e ./pi-quran-verses
 # or
 pi -e npm:pi-quran-verses
 ```
@@ -148,7 +150,6 @@ Published package contents (`files` in `package.json`):
 If you update the quotable list or translation sources:
 
 ```bash
-cd /Users/mikhail/pi-quran-verses
 node scripts/build-verses.mjs
 ```
 
@@ -159,9 +160,8 @@ Translation source files live in `source/translations/` (QuranScroll QUL simple 
 ## Development checks
 
 ```bash
-cd /Users/mikhail/pi-quran-verses
 npm pack --dry-run
-pi -e /Users/mikhail/pi-quran-verses --list-models
+pi -e . --list-models
 ```
 
 ## Notes
