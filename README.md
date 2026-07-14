@@ -25,7 +25,7 @@ Then `/reload` or restart Pi.
 While Pi is working, the spinner message is replaced with a random verse from the selected translation, for example:
 
 ```text
-Quran 94:5 — But lo! with hardship goeth ease.
+Quran 1:2 — [All] praise is [due] to Allāh, Lord of the worlds.
 ```
 
 A new verse is chosen on each agent turn (`turn_start`).
