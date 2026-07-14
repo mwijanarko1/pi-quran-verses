@@ -1,5 +1,7 @@
 # pi-quran-verses
 
+![Working spinner showing Quran 1:2](docs/demo-spinner.gif)
+
 Pi extension that shows a Quran verse next to the working spinner while the agent is responding.
 
 Only **complete-sentence** verses are used. Incomplete phrases, mid-sentence connectors, letter names (muqattaʿāt), and unfinished translation fragments are filtered out.
@@ -52,9 +54,11 @@ pi install npm:pi-quran-verses
 
 ## Usage
 
-While Pi is working, the spinner message is replaced with a random verse from the selected translation:
+While Pi is working, the spinner message is replaced with a random verse from the selected translation, for example:
 
-![Working spinner showing Quran 1:2](docs/demo-spinner.gif)
+```text
+Quran 1:2 — [All] praise is [due] to Allāh, Lord of the worlds.
+```
 
 A new verse is chosen on each agent turn (`turn_start`).
 
