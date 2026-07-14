@@ -6,7 +6,19 @@ Only **complete-sentence** verses are used. Incomplete phrases, mid-sentence con
 
 ## Install
 
-Local package (already set up on this machine):
+### From npm
+
+```bash
+pi install npm:pi-quran-verses
+```
+
+### From git
+
+```bash
+pi install git:github.com/mwijanarko1/pi-quran-verses
+```
+
+### Local path
 
 ```bash
 pi install /Users/mikhail/pi-quran-verses
@@ -16,9 +28,27 @@ Temporary test without installing:
 
 ```bash
 pi -e /Users/mikhail/pi-quran-verses
+# or
+pi -e npm:pi-quran-verses
 ```
 
 Then `/reload` or restart Pi.
+
+## Publish (maintainers)
+
+```bash
+npm login
+npm publish
+# or
+bun publish
+```
+
+Verify:
+
+```bash
+npm view pi-quran-verses version
+pi install npm:pi-quran-verses
+```
 
 ## Usage
 

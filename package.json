@@ -2,18 +2,40 @@
   "name": "pi-quran-verses",
   "version": "0.1.0",
   "type": "module",
-  "description": "Shows complete Quran verses in Pi's working spinner, with multi-language translation settings.",
+  "description": "Pi extension that shows complete-sentence Quran verses in the working spinner, with multi-language translation settings.",
   "license": "MIT",
+  "author": "mwijanarko1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwijanarko1/pi-quran-verses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwijanarko1/pi-quran-verses/issues"
+  },
+  "homepage": "https://github.com/mwijanarko1/pi-quran-verses#readme",
   "keywords": [
-    "pi-package"
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "quran",
+    "extension"
   ],
   "files": [
     "extensions",
     "README.md",
     "LICENSE"
   ],
+  "exports": {
+    ".": "./extensions/index.ts"
+  },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "pi": {
     "extensions": [
