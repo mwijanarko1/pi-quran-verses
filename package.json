@@ -27,7 +27,9 @@
     "extensions",
     "README.md",
     "LICENSE",
-    "docs"
+    "docs/demo-spinner.gif",
+    "docs/demo-spinner.png",
+    "docs/EXTENSION.md"
   ],
   "exports": {
     ".": "./extensions/index.ts"
