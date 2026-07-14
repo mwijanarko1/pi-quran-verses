@@ -54,8 +54,6 @@ pi install npm:pi-quran-verses
 
 While Pi is working, the spinner message is replaced with a random verse from the selected translation:
 
-![Quran verse in the Pi working spinner](docs/demo-spinner.png)
-
 ![Working spinner showing Quran 1:2](docs/demo-spinner.gif)
 
 A new verse is chosen on each agent turn (`turn_start`).
