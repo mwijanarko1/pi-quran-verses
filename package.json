@@ -1,6 +1,6 @@
 {
   "name": "pi-quran-verses",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Pi extension that shows complete-sentence Quran verses in the working spinner, with multi-language translation settings.",
   "license": "MIT",
