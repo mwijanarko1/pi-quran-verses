@@ -4,7 +4,10 @@
   "type": "module",
   "description": "Pi extension that shows complete-sentence Quran verses in the working spinner, with multi-language translation settings.",
   "license": "MIT",
-  "author": "mwijanarko1",
+  "author": {
+    "name": "mwijanarko1",
+    "url": "https://github.com/mwijanarko1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mwijanarko1/pi-quran-verses.git"
