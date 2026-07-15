@@ -62,11 +62,6 @@ function setVerse(ctx: ExtensionContext, edition: Edition) {
 export default function (pi: ExtensionAPI) {
   let settings = loadSettings();
 
-  pi.on("session_start", (_event, ctx) => {
-    const edition = getEdition(settings.editionId);
-    ctx.ui.setStatus("quran-verses", ctx.ui.theme.fg("dim", `Quran: ${label(edition)}`));
-  });
-
   pi.on("turn_start", (_event, ctx) => {
     setVerse(ctx, getEdition(settings.editionId));
   });
@@ -91,7 +86,6 @@ export default function (pi: ExtensionAPI) {
 
       settings = { editionId: edition.id };
       saveSettings(settings);
-      ctx.ui.setStatus("quran-verses", ctx.ui.theme.fg("dim", `Quran: ${label(edition)}`));
       ctx.ui.notify(`Quran spinner: ${label(edition)}`, "info");
     },
   });

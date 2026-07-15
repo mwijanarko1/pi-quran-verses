@@ -30,10 +30,7 @@ Pi loads it via the package manifest:
 
 ## Runtime behavior
 
-### On `session_start`
-
-- Loads settings from `~/.pi/agent/pi-quran-verses.json`
-- Sets a footer status like `Quran: English · Saheeh International`
+Settings are loaded from `~/.pi/agent/pi-quran-verses.json` when the extension starts.
 
 ### On `turn_start`
 
@@ -45,7 +42,7 @@ Pi loads it via the package manifest:
 1. Prompt for language
 2. If that language has multiple translations, prompt for translator
 3. Persist `{ "editionId": "..." }` to settings
-4. Update footer status and notify the user
+4. Notify the user
 
 ## Data model
 
